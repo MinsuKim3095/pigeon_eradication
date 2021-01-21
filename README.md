@@ -7,4 +7,5 @@ Let's create a device that recognizes pigeons and drives them out.
 labelImg를 통해 Image Labelling 완료
 
 2021/1/22  
-Image_Augmentation_Pigeon.ipynb를 사용하여 Image Augmentation 완료 (XML에 있는 Bounding Box포함)  
+Image_Augmentation_Pigeon.ipynb를 사용하여 Image Augmentation 완료  
+(XML에 있는 Bounding Box포함)  
