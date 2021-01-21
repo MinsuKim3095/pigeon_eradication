@@ -1,0 +1,26 @@
+<annotation>
+    <folder>Augmentation</folder>
+    <filename>first_pg11.jpg</filename>
+    <path>C:\Users\user\Desktop\github [업데이트용]\pigeon_eradication\Tensorflow\workspace\training_demo\images\pigeon_image\Augmentation\first_pg11.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>1280</width>
+        <height>960</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>pigeon</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>314</xmin>
+            <ymin>153</ymin>
+            <xmax>1088</xmax>
+            <ymax>927</ymax>
+        </bndbox>
+    </object>
+</annotation>
