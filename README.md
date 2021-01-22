@@ -29,4 +29,9 @@ I0123 01:20:55.086144  1204 checkpoint_utils.py:139] Waiting for new checkpoint 
 학습중인데 멈춰있어서 기다리는 중,(2021/1/23 01:23am)
 Tensorflow 2.2.0을 깔면 Use'tf.cast' instead. 에서 Stuck  
 Tensorflow 2.4.0을 깔면 위의 메세지에서 Stuck 상태.  
-진행상태 계속 확인 중
+진행상태 계속 확인 중  
+  
+Timeout Error(03:27am)  
+waiting for new checkpoint에서 진행되지 않음  
+colab으로 자고 일어나서 다시 진행해볼 예정  
+
