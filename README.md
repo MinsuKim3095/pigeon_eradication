@@ -34,5 +34,6 @@ Tensorflow 2.4.0을 깔면 위의 메세지에서 Stuck 상태.
 Timeout Error(03:27am)  
 waiting for new checkpoint에서 진행되지 않음  
 colab으로 자고 일어나서 다시 진행해볼 예정  
-기존 사용 내역 : Anaconda 가상환경(Tensorflow 2.4.0 / python 3.6 / cuDNN 10.1 / cuda 7.1 / jupyter notebook / .py 파일은 terminal을 통해 실행)
+기존 사용 내역 :  
+Anaconda 가상환경(Tensorflow 2.4.0 / python 3.6 / cuDNN 10.1 / cuda 7.1 / jupyter notebook / .py 파일은 terminal을 통해 실행)
 
