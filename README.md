@@ -16,3 +16,7 @@ labelImg를 통해 Image Labelling 완료
 2021/1/22  
 Image_Augmentation_Pigeon.ipynb를 사용하여 Image Augmentation 완료  
 (XML에 있는 Bounding Box포함)  
+
+2021/1/22  
+경로 설정에 한글이 포함되있어서 xml파싱 / Training Data 학습 시 유니코드 에러 발생.  
+다 지운 뒤 한글이 없는 경로에서 다시 시도.
