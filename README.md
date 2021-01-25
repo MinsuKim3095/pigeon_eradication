@@ -41,4 +41,6 @@ Anaconda 가상환경(Tensorflow 2.4.0 / python 3.6 / cuDNN 10.1 / cuda 7.1 / ju
 Yolo_v4 구동 완료  
 참고 자료  
 https://www.youtube.com/watch?v=sUxAVpzZ8hU  
-다음 목표 : 비둘기 Image Augementation 후, Custom Training 시도
+  
+# 개발환경 
+python3.7.7 / cuda 10.2 / cudnn 7.6.5.32 for cuda 10.2 / openCV 4.1.0 / opencv_contrib / cmake 3.17.2 / Visual Studio 2019
