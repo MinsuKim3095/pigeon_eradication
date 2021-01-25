@@ -43,4 +43,10 @@ Yolo_v4 구동 완료
 https://www.youtube.com/watch?v=sUxAVpzZ8hU  
   
 # 개발환경 
-python3.7.7 / cuda 10.2 / cudnn 7.6.5.32 for cuda 10.2 / openCV 4.1.0 / opencv_contrib / cmake 3.17.2 / Visual Studio 2019
+- python3.7.7  
+- cuda 10.2  
+- cudnn 7.6.5.32 for cuda 10.2  
+- openCV 4.1.0  
+- opencv_contrib  
+- cmake 3.17.2  
+- Visual Studio 2019
