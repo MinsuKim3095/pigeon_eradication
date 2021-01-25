@@ -43,7 +43,7 @@ Yolo_v4 구동 완료
 https://www.youtube.com/watch?v=sUxAVpzZ8hU  
   
 # 개발환경 
-- python3.7.7  
+- python 3.7.7  
 - cuda 10.2  
 - cudnn 7.6.5.32 for cuda 10.2  
 - openCV 4.1.0  
