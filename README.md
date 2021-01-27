@@ -49,4 +49,19 @@ https://www.youtube.com/watch?v=sUxAVpzZ8hU
 - openCV 4.1.0  
 - opencv_contrib  
 - cmake 3.17.2  
-- Visual Studio 2019
+- Visual Studio 2019  
+  
+# 학습 결과  
+2021/01/27  
+- yolo-obj.cfg  
+- classes = 1, 마지막 convolutional filters를 30 (Class 갯수)+5)*5로 설정.  
+- height와 width는 첫 딥러닝이다보니 가늠이 가지않아 416 x 416으로 낮게 수정. 메모리는 부족하지 않으니 더 올려도 될 듯  
+- subdivisions = 16  
+- max_batches = 2000 (Class 갯수 * 2000)  
+- steps = 1600,1800 (0.8max_batches / 0.9max_batches)  
+- image 190장 (원본 20장 + Augmentation 170장 )  
+- 사진, 동영상으로 비둘기 인식률 확인 시도  
+- 옆모습과 전체 사진만 있어서 몸만 나오거나 정면을 보고 있을 경우 인식률이 좋지 않음.  
+- 비둘기가 여러마리 작게 있는 사진은 인식하지 못함.  
+- Dataset을 추가하여 재학습을 해야겠다.  
+- 다양한 모습의 비둘기 사진 필요 (사진이 잘려있거나, 정면, 뒷모습 등)
