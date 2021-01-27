@@ -77,7 +77,7 @@ avg = loss값, 손실율의 평균
 iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바운더리 박스의 중첩 면적을 측정,  
 이를 합집합의 면적으로 나눈 것. 0.5 이상이면 제대로 검출됐다고 판단.  
 - darknet19_448.conv.23 사용  
-![chart](https://user-images.githubusercontent.com/68323158/106037743-6c5cd800-611a-11eb-9230-7626a0dcdbe7.png)  
+![chart_yolo-obj](https://user-images.githubusercontent.com/68323158/106045770-be0a6000-6124-11eb-9f76-43b5cb05db2b.png)
   
 클릭하면 Youtube로 연결됩니다.
 [![yolov4_pigeon training test](http://img.youtube.com/vi/AHaGocULVMA/0.jpg)](https://youtu.be/AHaGocULVMA?t=0s) 
