@@ -64,4 +64,10 @@ https://www.youtube.com/watch?v=sUxAVpzZ8hU
 - 옆모습과 전체 사진만 있어서 몸만 나오거나 정면을 보고 있을 경우 인식률이 좋지 않음.  
 - 비둘기가 여러마리 작게 있는 사진은 인식하지 못함.  
 - Dataset을 추가하여 재학습을 해야겠다.  
-- 다양한 모습의 비둘기 사진 필요 (사진이 잘려있거나, 정면, 뒷모습 등)
+- 다양한 모습의 비둘기 사진 필요 (사진이 잘려있거나, 정면, 뒷모습 등)  
+  
+2021/01/28  
+- Yolo_mark 로 labeling을 할 경우, txt파일로 저장되서 image_augmentation_pigeon.ipynb 파일이 txt를 못 읽음  
+(xml을 파싱하도록 해놔서)  
+- iCrawler로 google에서 비둘기 image 추가 확보.  
+- labelimg로 labeling을 해서 재학습시킬 예정.
