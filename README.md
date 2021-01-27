@@ -57,7 +57,7 @@ https://www.youtube.com/watch?v=sUxAVpzZ8hU
 2021/01/27  
 - yolo-obj.cfg  
 - classes = 1, 마지막 convolutional filters를 30 (Class 갯수)+5)*5로 설정.  
-- height와 width는 첫 딥러닝이다보니 가늠이 가지않아 416 x 416으로 낮게 수정. 메모리는 부족하지 않으니 더 올려도 될 듯  
+- height와 width는 첫 딥러닝이다보니 가늠이 가지않아 416 x 416으로 낮게 수정.
 - subdivisions = 16  
 - max_batches = 2000 (Class 갯수 * 2000)  
 - steps = 1600,1800 (0.8max_batches / 0.9max_batches)  
@@ -72,4 +72,8 @@ https://www.youtube.com/watch?v=sUxAVpzZ8hU
 - Yolo_mark 로 labeling을 할 경우, txt파일로 저장되서 image_augmentation_pigeon.ipynb 파일이 txt를 못 읽음  
 (xml을 파싱하도록 해놔서)  
 - iCrawler로 google에서 비둘기 image 추가 확보.  
-- labelimg로 labeling을 해서 재학습시킬 예정.
+- labelimg로 labeling을 해서 재학습시킬 예정.  
+avg = loss값, 손실율의 평균  
+iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바운더리 박스의 중첩 면적을 측정,  
+이를 합집합의 면적으로 나눈 것. 0.5 이상이면 제대로 검출됐다고 판단.
+
