@@ -71,8 +71,8 @@ https://www.youtube.com/watch?v=sUxAVpzZ8hU
 2021/01/28  
 - Yolo_mark 로 labeling을 할 경우, txt파일로 저장되서 image_augmentation_pigeon.ipynb 파일이 txt를 못 읽음  
 (xml을 파싱하도록 해놔서)  
-- iCrawler로 google에서 비둘기 image 추가 확보.  
-- labelimg로 labeling을 해서 재학습시킬 예정.  
+- iCrawler로 google에서 비둘기 image 추가 확보 (총 231장, 기존 Augmented Image 제외 후 새로 Augmentation 실행)  
+- labelimg로 labeling을 해서 재학습.  
 avg = loss값, 손실율의 평균  
 iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바운더리 박스의 중첩 면적을 측정,  
 이를 합집합의 면적으로 나눈 것. 0.5 이상이면 제대로 검출됐다고 판단.  
