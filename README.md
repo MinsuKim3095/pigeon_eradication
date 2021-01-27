@@ -50,6 +50,8 @@ https://www.youtube.com/watch?v=sUxAVpzZ8hU
 - opencv_contrib  
 - cmake 3.17.2  
 - Visual Studio 2019  
+- labelImg  
+- Yolo_Mark  
   
 # 학습 결과  
 2021/01/27  
