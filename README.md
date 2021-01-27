@@ -77,5 +77,5 @@ avg = loss값, 손실율의 평균
 iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바운더리 박스의 중첩 면적을 측정,  
 이를 합집합의 면적으로 나눈 것. 0.5 이상이면 제대로 검출됐다고 판단.  
 - darknet19_448.conv.23 사용  
-![chart](https://user-images.githubusercontent.com/68323158/106037743-6c5cd800-611a-11eb-9230-7626a0dcdbe7.png)  
-<iframe width="860" height="642" src="https://www.youtube.com/embed/AHaGocULVMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![chart](https://user-images.githubusercontent.com/68323158/106037743-6c5cd800-611a-11eb-9230-7626a0dcdbe7.png) ㅗㅅ
+[![IU(아이유) _ Into the I-LAND](http://img.youtube.com/vi/QYNwbZHmh8g/0.jpg)](https://youtu.be/QYNwbZHmh8g?t=0s) 
