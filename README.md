@@ -75,5 +75,6 @@ https://www.youtube.com/watch?v=sUxAVpzZ8hU
 - labelimg로 labeling을 해서 재학습시킬 예정.  
 avg = loss값, 손실율의 평균  
 iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바운더리 박스의 중첩 면적을 측정,  
-이를 합집합의 면적으로 나눈 것. 0.5 이상이면 제대로 검출됐다고 판단.
+이를 합집합의 면적으로 나눈 것. 0.5 이상이면 제대로 검출됐다고 판단.  
+![chart](https://user-images.githubusercontent.com/68323158/106037743-6c5cd800-611a-11eb-9230-7626a0dcdbe7.png)
 
