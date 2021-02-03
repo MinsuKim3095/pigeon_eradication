@@ -8,6 +8,7 @@ Let's create a device that recognizes pigeons and drives them out.
 https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html  
 https://github.com/aleju/imgaug#documentation  
 https://junyoung-jamong.github.io/machine/learning/2019/01/23/%EB%B0%94%EC%9A%B4%EB%94%A9%EB%B0%95%EC%8A%A4%EB%A5%BC-%ED%8F%AC%ED%95%A8%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%A6%9D%ED%8F%AD%EC%8B%9C%ED%82%A4%EA%B8%B0-with-imgaug.html  
+https://lee-yunseok.tistory.com/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC-%ED%8C%8C%EC%9D%B4-4-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EA%B5%AC%EC%84%B1-%EB%B0%8F-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95%EB%B2%95
 
   
 2021/1/20  
@@ -86,4 +87,10 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 ![chart_yolo-obj](https://user-images.githubusercontent.com/68323158/106045770-be0a6000-6124-11eb-9f76-43b5cb05db2b.png)
   
 클릭하면 Youtube로 연결됩니다.
-[![yolov4_pigeon training test](http://img.youtube.com/vi/AHaGocULVMA/0.jpg)](https://youtu.be/AHaGocULVMA?t=0s) 
+[![yolov4_pigeon training test](http://img.youtube.com/vi/AHaGocULVMA/0.jpg)](https://youtu.be/AHaGocULVMA?t=0s)  
+
+2021/02/23  
+- Raspberry Pi 4 [서버용] 환경설정 완료  
+- 한글입력기 / LAMP(Linux, Apache2, MariaDB, PHP)
+- 인식한 비둘기의 Bounding Box의 중앙값을 서버를 통해 송신할 예정.  
+- 180 / 360 Degree servo motor 및 USB 웹캠 연결 
