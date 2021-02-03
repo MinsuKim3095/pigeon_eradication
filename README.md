@@ -93,4 +93,4 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 - Raspberry Pi 4 [서버용] 환경설정 완료  
 - 한글입력기 / LAMP(Linux, Apache2, MariaDB, PHP)
 - 인식한 비둘기의 Bounding Box의 중앙값을 서버를 통해 송신할 예정.  
-- 180 / 360 Degree servo motor 및 USB 웹캠 연결 
+- 180 / 360 Degree servo motor 및 USB 웹캠 연결 필요
