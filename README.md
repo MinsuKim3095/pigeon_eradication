@@ -42,7 +42,7 @@ Yolo_v4 구동 완료
 참고 자료  
 https://www.youtube.com/watch?v=sUxAVpzZ8hU  
   
-# 개발환경 
+# 개발환경 (Software)
 - python 3.7.7  
 - cuda 10.2  
 - cudnn 7.6.5.32 for cuda 10.2  
@@ -53,6 +53,12 @@ https://www.youtube.com/watch?v=sUxAVpzZ8hU
 - labelImg  
 - Yolo_Mark  
   
+# 개발환경 (Hardware)  
+- Raspberry pi 4 ( Raspbery pi OS 32bit )
+- 180 degree servo motor x 1  
+- 360 degree servo motor x 1  
+- Auto Water Gun
+
 # 학습 결과  
 2021/01/27  
 - yolo-obj.cfg  
