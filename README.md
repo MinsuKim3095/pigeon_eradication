@@ -98,5 +98,7 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 2021/02/04  
 - SG90 (180degree) X 2 + tilt 거치대 제작 완료  
 - 라즈베리파이 GPIO 중 PWM을 지원하는 4개의 핀에 설치할 예정  
+- 라즈베리파이4 GPIO PIN Assignments  
+- https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711/rpi_DATA_2711_1p0_preliminary.pdf  
 - 현재 점퍼선이 아직 오지않아 연결 못하는 중  
 - 라즈베리파이4 X USB형 웹캠 연결 확인 
