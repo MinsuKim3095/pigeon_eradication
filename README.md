@@ -89,8 +89,14 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 클릭하면 Youtube로 연결됩니다.
 [![yolov4_pigeon training test](http://img.youtube.com/vi/AHaGocULVMA/0.jpg)](https://youtu.be/AHaGocULVMA?t=0s)  
 
-2021/02/23  
+2021/02/03  
 - Raspberry Pi 4 [서버용] 환경설정 완료  
 - 한글입력기 / LAMP(Linux, Apache2, MariaDB, PHP)
 - 인식한 비둘기의 Bounding Box의 중앙값을 서버를 통해 송신할 예정.  
-- 180 / 360 Degree servo motor 및 USB 웹캠 연결 필요
+- 180 / 360 Degree servo motor 및 USB 웹캠 연결 필요  
+  
+2021/02/04  
+- SG90 (180degree) X 2 + tilt 거치대 제작 완료  
+- 라즈베리파이 GPIO 중 PWM을 지원하는 4개의 핀에 설치할 예정  
+- 현재 점퍼선이 아직 오지않아 연결 못하는 중  
+- 라즈베리파이4 X USB형 웹캠 연결 확인 
