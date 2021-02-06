@@ -3,6 +3,10 @@ Let's create a device that recognizes pigeons and drives them out.
   
 # 계획
 비둘기 인식 -> 비둘기가 싫어한다고 하는 계피향 분출하는 장치 만들기  
+-> 데스크탑[비둘기가 학습된 Yolo_v4를 이용한 USB웹캠 실행] + SG90 [180 Degree]를 이용하여 전방 감시 [상하좌우] + 물총도 함께 회전  
+-> 웹 웹캠에서 비둘기를 인식 시, 비둘기 Bounding box의 중앙 좌표 값을 계산하여 php 파일로 Raspberry Pi 4로 전송.  
+-> Raspberry Pi 4에서 php와 mysql을 이용한 server를 만들고, 중앙 좌표 값을 php 파일로 받기  
+-> 동시에 SG90 모터 정지 후,[카메라 및 물총 회전 정지] + 물총 트리거에 설치해놓은 MG996R [360 Degree]를 이용하여 해당 지점에 물총 발사
   
 # 참고사이트  
 https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html  
@@ -56,7 +60,7 @@ https://www.youtube.com/watch?v=sUxAVpzZ8hU
   
 # 개발환경 (Hardware)  
 - Raspberry pi 4 ( Raspbery pi OS 32bit )
-- 180 degree servo motor x 1  
+- 180 degree servo motor x 2  
 - 360 degree servo motor x 1  
 - Auto Water Gun
 
@@ -101,4 +105,9 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 - 라즈베리파이4 GPIO PIN Assignments  
 - https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711/rpi_DATA_2711_1p0_preliminary.pdf  
 - 현재 점퍼선이 아직 오지않아 연결 못하는 중  
-- 라즈베리파이4 X USB형 웹캠 연결 확인 
+  
+2021/02/05  
+- SG90, MG996R 라즈베리파이 가동 확인.(PWM지원 = GPIO 12,13,18,19번)  
+- 12,13은 PWM0, 18,19는 PWM1로 묶여있지만 각각 구동 가능.  
+- 동시에 가동하기위해 pi-blaster를 라즈베리파이에 설치 및 테스트 중.  
+- 그 외 다른 방법으로 동시에 가동할 수 있는 방법이 있나 탐색 중.
