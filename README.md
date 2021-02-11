@@ -122,4 +122,5 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 - 라즈베리파이4 Gadget mode + putty를 이용,라즈베리파이4를 pc에서 컨트롤.  
 - 라즈베리파이4 서버 pc에서 접속 확인.  
 - 소켓통신을 통해 pc(webcam+yolo)에서 확인한 정보를 라즈베리파이4의 서버에 전송테스트 해볼 예정.   
-- 소켓테스트 성공.
+- 소켓테스트 성공.  
+![socket_connection](https://user-images.githubusercontent.com/68323158/107618371-d2a63680-6c94-11eb-9926-98ea335bbd88.jpg)
