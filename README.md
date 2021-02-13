@@ -142,4 +142,9 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 클릭하면 Youtube로 연결됩니다.  
 [![yolo_v4_pigeon_training_test](https://img.youtube.com/vi/e0q-Pqr5URo/0.jpg)](https://www.youtube.com/watch?v=e0q-Pqr5URo)
 
-![chart_yolov4-custom](https://user-images.githubusercontent.com/68323158/107860402-87517b00-6e82-11eb-9c37-0e51da5d0672.png)
+![chart_yolov4-custom](https://user-images.githubusercontent.com/68323158/107860402-87517b00-6e82-11eb-9c37-0e51da5d0672.png)  
+- 앞으로의 계획  
+- bbox의 중앙값 좌표를 라즈베리파이로 전송하고, 웹캠의 중앙점 x좌표와 bbox의 중앙점 x좌표를 sg90모터를 이용해 최대한 가깝게 근접시킨후, mg996r 모터를 이용해 물총을 발사하게 만들어야함.  
+- bbox좌표 <-> 라즈베리파이의 통신방법을 찾아봐야함.  
+- bbox 인식시, sg90을 이용하여 모터가 웹캠의 중앙점 x 좌표에 가깝게 가도록 이동시킬 수 있어야함.  
+- 그 후, MG996R를 사용하여 물총을 쏘고, bbox가 사라지면 다시 sg90을 회전시켜야함.
