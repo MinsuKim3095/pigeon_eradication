@@ -134,3 +134,9 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 - 비둘기 인식률을 높이기위해 라벨링을 다시 하여 재 학습중, batch=64, subdivisions(mini-batch):64, width, height : 416, max_batches = 4000 으로 수정.  
 - html 서버를 이용하여 bbox 중간값을 라즈베리파이 서버로 전송할 예정.   
 - 카메라가 수직으로 움직이지는 않으니, 화면의 중심좌표값을 정해놓고, bbox를 인식하면 bbox의 center_x값에 가깝게 가도록 코딩을 해야겠다.
+  
+2021/02/14  
+- 비둘기 Custom Training 다시 함.  
+- 인식률 매우 상승  
+클릭하면 Youtube로 연결됩니다.  
+[![yolo_v4_pigeon_training_test](https://img.youtube.com/vi/e0q-Pqr5URo/2.jpg)](https://www.youtube.com/watch?v=e0q-Pqr5URo)
