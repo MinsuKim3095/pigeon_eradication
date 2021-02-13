@@ -129,7 +129,7 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 - darknet_video.py에서 draw_detection_box 내용을 수정하면 bbox안에 점을 찍을 수 있음.  
   
 2021/02/13  
-- SG90 0~180, 180~0 계속 회전하도록 설정.  
-- MG996R 0~360, 360~0 으로 회전하게 설정하여 물총 트리거 눌렀다가 뗐다가 반복하게 설정.  
+- SG90 0 to 180 degree, 180 to 0 degree 계속 회전하도록 설정.  
+- MG996R 0 to 360 degree, 360 to 0 degree 으로 회전하게 설정하여 물총 트리거 눌렀다가 뗐다가 반복하게 설정.  
 - 비둘기 인식률을 높이기위해 라벨링을 다시 하여 재 학습중, batch=64, subdivisions(mini-batch):64, width, height : 416, max_batches = 4000 으로 수정.  
 - html 서버를 이용하여 bbox 중간값을 라즈베리파이 서버로 전송할 예정.
