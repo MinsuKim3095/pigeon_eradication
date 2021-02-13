@@ -141,3 +141,5 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 - bbox 중앙의 좌표값을 계산하여 하얀색 원으로 실시간 표시.  
 클릭하면 Youtube로 연결됩니다.  
 [![yolo_v4_pigeon_training_test](https://img.youtube.com/vi/e0q-Pqr5URo/0.jpg)](https://www.youtube.com/watch?v=e0q-Pqr5URo)
+
+![chart_yolov4-custom](https://user-images.githubusercontent.com/68323158/107860402-87517b00-6e82-11eb-9c37-0e51da5d0672.png)
