@@ -3,7 +3,7 @@ Let's create a device that recognizes pigeons and drives them out.
   
 # 계획
 비둘기 인식 -> 비둘기가 싫어한다고 하는 계피향 분출하는 장치 만들기  
--> 데스크탑[비둘기가 학습된 Yolo_v4를 이용한 USB웹캠 실행] + SG90 [180 Degree]를 이용하여 전방 감시 [상하좌우] + 물총도 함께 회전  
+-> 데스크탑[비둘기가 학습된 Yolo_v4를 이용한 USB웹캠 실행] + SG90 [180 Degree]를 이용하여 좌우  + 물총도 함께 회전  
 -> 웹 웹캠에서 비둘기를 인식 시, 비둘기 Bounding box의 중앙 좌표 값을 계산하여 php 파일로 Raspberry Pi 4로 전송.  
 -> Raspberry Pi 4에서 php와 mysql을 이용한 server를 만들고, 중앙 좌표 값을 php 파일로 받기  
 -> 동시에 SG90 모터 정지 후,[카메라 및 물총 회전 정지] + 물총 트리거에 설치해놓은 MG996R [360 Degree]를 이용하여 해당 지점에 물총 발사
