@@ -3,7 +3,7 @@ Let's create a device that recognizes pigeons and drives them out.
   
 # 계획
 비둘기 인식 -> 비둘기가 싫어한다고 하는 계피향 분출하는 장치 만들기  
--> 데스크탑[비둘기가 학습된 Yolo_v4를 이용한 USB웹캠 실행] + SG90 [180 Degree]를 이용하여 전방 감시 [상하좌우] + 물총도 함께 회전  
+-> 데스크탑[비둘기가 학습된 Yolo_v4를 이용한 USB웹캠 실행] + SG90 [180 Degree]를 이용하여 좌우  + 물총도 함께 회전  
 -> 웹 웹캠에서 비둘기를 인식 시, 비둘기 Bounding box의 중앙 좌표 값을 계산하여 php 파일로 Raspberry Pi 4로 전송.  
 -> Raspberry Pi 4에서 php와 mysql을 이용한 server를 만들고, 중앙 좌표 값을 php 파일로 받기  
 -> 동시에 SG90 모터 정지 후,[카메라 및 물총 회전 정지] + 물총 트리거에 설치해놓은 MG996R [360 Degree]를 이용하여 해당 지점에 물총 발사
@@ -127,3 +127,28 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
   
 2021/02/11  
 - darknet_video.py에서 draw_detection_box 내용을 수정하면 bbox안에 점을 찍을 수 있음.  
+  
+2021/02/13  
+- SG90 0 to 180 degree, 180 to 0 degree 계속 회전하도록 설정.  
+- MG996R 0 to 360 degree, 360 to 0 degree 으로 회전하게 설정하여 물총 트리거 눌렀다가 뗐다가 반복하게 설정.  
+- 비둘기 인식률을 높이기위해 라벨링을 다시 하여 재 학습중, batch=64, subdivisions(mini-batch):64, width, height : 416, max_batches = 4000 으로 수정.  
+- html 서버를 이용하여 bbox 중간값을 라즈베리파이 서버로 전송할 예정.   
+- 카메라가 수직으로 움직이지는 않으니, 화면의 중심좌표값을 정해놓고, bbox를 인식하면 bbox의 center_x값에 가깝게 가도록 코딩을 해야겠다.
+  
+2021/02/14  
+- 비둘기 Custom Training 다시 함.  
+- 인식률 매우 상승  
+- bbox 중앙의 좌표값을 계산하여 하얀색 원으로 실시간 표시.  
+클릭하면 Youtube로 연결됩니다.  
+[![yolo_v4_pigeon_training_test](https://img.youtube.com/vi/e0q-Pqr5URo/0.jpg)](https://www.youtube.com/watch?v=e0q-Pqr5URo)
+
+![chart_yolov4-custom](https://user-images.githubusercontent.com/68323158/107860402-87517b00-6e82-11eb-9c37-0e51da5d0672.png)  
+- 앞으로의 계획  
+- bbox의 중앙값 좌표를 라즈베리파이로 전송하고, 웹캠의 중앙점 x좌표와 bbox의 중앙점 x좌표를 sg90모터를 이용해 최대한 가깝게 근접시킨후, mg996r 모터를 이용해 물총을 발사하게 만들어야함.  
+- bbox좌표 <-> 라즈베리파이의 통신방법을 찾아봐야함.  
+- bbox 인식시, sg90을 이용하여 모터가 웹캠의 중앙점 x 좌표에 가깝게 가도록 이동시킬 수 있어야함.  
+- 그 후, MG996R를 사용하여 물총을 쏘고, bbox가 사라지면 다시 sg90을 회전시켜야함.
+  
+2021/02/15
+- 소켓통신을 해서 라즈베리파이(서버)에 PC에서 생긴 bbox의 x_center 좌표값을 txt에 실시간으로 갱신.  
+- txt의 내용이 바뀔때마다 pc에서 raspberry pi로 해당 값 전송 확인.  
