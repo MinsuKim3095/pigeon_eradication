@@ -152,3 +152,10 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 2021/02/15
 - 소켓통신을 해서 라즈베리파이(서버)에 PC에서 생긴 bbox의 x_center 좌표값을 txt에 실시간으로 갱신.  
 - txt의 내용이 바뀔때마다 pc에서 raspberry pi로 해당 값 전송 확인.  
+  
+  
+2021/02/17  
+- 통신 계획 수정  
+- Darknet_video.py 에서 bbox center coordinates값을 계속 coordinates.txt에 갱신  
+- desktop(client).py [pc] 와 python_socket_server.py [raspberry pi4]를 이용하여 소켓통신으로 실시간 bbox center coordinates값 전송  
+- 전송 확인 완료
