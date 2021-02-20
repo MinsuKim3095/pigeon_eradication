@@ -152,3 +152,18 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 2021/02/15
 - 소켓통신을 해서 라즈베리파이(서버)에 PC에서 생긴 bbox의 x_center 좌표값을 txt에 실시간으로 갱신.  
 - txt의 내용이 바뀔때마다 pc에서 raspberry pi로 해당 값 전송 확인.  
+  
+  
+2021/02/17  
+- 통신 계획 수정  
+- Darknet_video.py 에서 bbox center coordinates값을 계속 coordinates.txt에 갱신  
+- desktop(client).py [pc] 와 python_socket_server.py [raspberry pi4]를 이용하여 소켓통신으로 실시간 bbox center coordinates값 전송  
+- 전송 확인 완료  
+  
+2021/02/20  
+- bbox center coordinates가 아닌, 웹캠의 중심 x값 - bbox의 중심x값을 보내기로 바꿈.  
+- 전송 확인 완료.  
+- 문제는 bbox가 생기지 않았을때, None 상태일때 어떻게 처리할것인가? 하는 문제.  
+- 라즈베리파이에서도 txt파일이 None일때, 계속 감시상태 (0 to 180, 180 to 0)  
+- 하지만 값이 생겼을때 str로 들어오기때문에 int로 바꿔주기 위해 int를 걸면 기존에 null값을 인식해서 int로 바꿀수없다는 에러가 뜸  
+- 해결책 필요
