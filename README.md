@@ -8,42 +8,13 @@ Let's create a device that recognizes pigeons and drives them out.
 # 참고사이트  
 [Yolo_v4 Github]  
 https://github.com/AlexeyAB/darknet  
+  
 [Yolo_v4 Tutorial]  
-https://www.youtube.com/watch?v=5pYh1rFnNZs
-
+https://www.youtube.com/watch?v=5pYh1rFnNZs  
   
-2021/1/20  
-labelImg를 통해 Image Labelling 완료
-
-2021/1/22  
-Image_Augmentation_Pigeon.ipynb를 사용하여 Image Augmentation 완료  
-(XML에 있는 Bounding Box포함)  
-
-2021/1/22  
-경로 설정에 한글이 포함되있어서 xml파싱 / Training Data 학습 시 유니코드 에러 발생.  
-다 지운 뒤 한글이 없는 경로에서 다시 시도.  
-  
-2021/1/23
-Use `tf.cast` instead.
-INFO:tensorflow:Waiting for new checkpoint at models/my_ssd_resnet50_v1_fpn
-I0123 01:20:55.086144  1204 checkpoint_utils.py:139] Waiting for new checkpoint at models/my_ssd_resnet50_v1_fpn
-
-학습중인데 멈춰있어서 기다리는 중,(2021/1/23 01:23am)
-Tensorflow 2.2.0을 깔면 Use'tf.cast' instead. 에서 Stuck  
-Tensorflow 2.4.0을 깔면 위의 메세지에서 Stuck 상태.  
-진행상태 계속 확인 중  
-  
-Timeout Error(03:27am)  
-waiting for new checkpoint에서 진행되지 않음  
-colab으로 자고 일어나서 다시 진행해볼 예정  
-기존 사용 내역 :  
-Anaconda 가상환경(Tensorflow 2.4.0 / python 3.6 / cuDNN 10.1 / cuda 7.1 / jupyter notebook / .py 파일은 terminal을 통해 실행)  
-  
-2021/01/24  
-Yolo_v4 구동 완료  
-참고 자료  
-https://www.youtube.com/watch?v=sUxAVpzZ8hU  
-  
+[Darknet_force_gpu error]의 경우, darknet folder를 아래의 폴더로 바꾸기
+https://www.dropbox.com/s/5up5i84l60qr778/darknet.zip?dl=0
+   
 # 개발환경 (Software)
 - python 3.7.7  
 - cuda 10.2  
@@ -51,17 +22,30 @@ https://www.youtube.com/watch?v=sUxAVpzZ8hU
 - openCV 4.1.0  
 - opencv_contrib  
 - cmake 3.17.2  
-- Visual Studio 2019  
-- labelImg  
+- Visual Studio 2019    
 - Yolo_Mark  
   
 # 개발환경 (Hardware)  
-- Raspberry pi 4 ( Raspbery pi OS 32bit )
+- Ryzen 3600x Matisse  
+- Geforce 1660 Super
+- Raspberry pi 4 ( Raspbian )
 - 180 degree servo motor x 2  
 - 360 degree servo motor x 1  
-- Auto Water Gun
-
-# 학습 결과  
+- Auto Water Gun  
+  
+  
+# 개발환경 (Library)  
+- time  (Servo Motor Control)
+- pigpiod (Servo Motor Control)  
+- socket (Socket Connection)  
+- cv2 (openCV for Yolo_v4)  
+- darknet (Yolo_v4)  
+- numpy (Yolo_v4)  
+- os  
+- math  
+- random  
+  
+# 학습 진행 
 2021/01/27  
 - yolo-obj.cfg  
 - classes = 1, 마지막 convolutional filters를 30 (Class 갯수)+5)*5로 설정.  
@@ -202,4 +186,7 @@ iou = 알고리즘이 설정한 바운더리박스와 사용자가 설정한 바
 - 물총과 카메라를 연결할 거치대를 구해서 설치하면 OK  
   
 2021/02/27  
-- 월요일에 나무공방에 모터 + 물총 거치대 제작 의뢰예정
+- 월요일에 나무공방에 모터 + 물총 거치대 제작 의뢰예정  
+  
+2021/03/01
+- 제작 공방을 찾는 중
