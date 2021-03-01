@@ -322,10 +322,12 @@ void draw_detections_v3(image im, detection *dets, int num, float thresh, char *
         const int best_class = selected_detections[i].best_class;
         printf("%s: %.0f%%", names[best_class],    selected_detections[i].det.prob[best_class] * 100);
         if (ext_output)
-            printf("\t(left_x: %4.0f   top_y: %4.0f   width: %4.0f   height: %4.0f)\n",
+            printf("\t(left_x: %4.0f   top_y: %4.0f   width: %4.0f   height: %4.0f center :%4.0f %4.0f)\n",
                 round((selected_detections[i].det.bbox.x - selected_detections[i].det.bbox.w / 2)*im.w),
                 round((selected_detections[i].det.bbox.y - selected_detections[i].det.bbox.h / 2)*im.h),
-                round(selected_detections[i].det.bbox.w*im.w), round(selected_detections[i].det.bbox.h*im.h));
+                round(selected_detections[i].det.bbox.w*im.w), round(selected_detections[i].det.bbox.h*im.h),
+                round((selected_detections[i].det.bbox.w * im.w)/2),
+                round((selected_detections[i].det.bbox.h*im.h)/2));
         else
             printf("\n");
         int j;
@@ -334,10 +336,12 @@ void draw_detections_v3(image im, detection *dets, int num, float thresh, char *
                 printf("%s: %.0f%%", names[j], selected_detections[i].det.prob[j] * 100);
 
                 if (ext_output)
-                    printf("\t(left_x: %4.0f   top_y: %4.0f   width: %4.0f   height: %4.0f)\n",
-                        round((selected_detections[i].det.bbox.x - selected_detections[i].det.bbox.w / 2)*im.w),
-                        round((selected_detections[i].det.bbox.y - selected_detections[i].det.bbox.h / 2)*im.h),
-                        round(selected_detections[i].det.bbox.w*im.w), round(selected_detections[i].det.bbox.h*im.h));
+                    printf("\t(left_x: %4.0f   top_y: %4.0f   width: %4.0f   height: %4.0f  center : %4.0f %4.0f)\n",
+                        round((selected_detections[i].det.bbox.x - selected_detections[i].det.bbox.w / 2) * im.w),
+                        round((selected_detections[i].det.bbox.y - selected_detections[i].det.bbox.h / 2) * im.h),
+                        round(selected_detections[i].det.bbox.w * im.w), round(selected_detections[i].det.bbox.h * im.h),
+                        round((selected_detections[i].det.bbox.w * im.w) / 2),
+                        round((selected_detections[i].det.bbox.h * im.h) / 2));
                 else
                     printf("\n");
             }
@@ -425,6 +429,7 @@ void draw_detections_v3(image im, detection *dets, int num, float thresh, char *
                 image label = get_label_v3(alphabet, labelstr, (im.h*.02));
                 draw_label(im, top + width, left, label, rgb);
                 free_image(label);
+                Ellipse()
             }
             if (selected_detections[i].det.mask) {
                 image mask = float_to_image(14, 14, 1, selected_detections[i].det.mask);
@@ -442,6 +447,11 @@ void draw_detections_v3(image im, detection *dets, int num, float thresh, char *
 void draw_detections(image im, int num, float thresh, box *boxes, float **probs, char **names, image **alphabet, int classes)
 {
     int i;
+
+
+
+
+
 
     for(i = 0; i < num; ++i){
         int class_id = max_index(probs[i], classes);
@@ -485,16 +495,17 @@ void draw_detections(image im, int num, float thresh, box *boxes, float **probs,
             if(right > im.w-1) right = im.w-1;
             if(top < 0) top = 0;
             if(bot > im.h-1) bot = im.h-1;
-            printf("%s: %.0f%%", names[class_id], prob * 100);
+            //printf("%s: %.0f%%", names[class_id], prob * 100);
 
-            //printf(" - id: %d, x_center: %d, y_center: %d, width: %d, height: %d",
-            //    class_id, (right + left) / 2, (bot - top) / 2, right - left, bot - top);
+            printf(" - id: %d, x_center: %d, y_center: %d, width: %d, height: %d",
+               class_id, (right + left) / 2, (bot - top) / 2, right - left, bot - top);
 
             printf("\n");
             draw_box_width(im, left, top, right, bot, width, red, green, blue);
             if (alphabet) {
                 image label = get_label(alphabet, names[class_id], (im.h*.03)/10);
                 draw_label(im, top + width, left, label, rgb);
+
             }
         }
     }
