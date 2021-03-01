@@ -2,6 +2,8 @@
 Let's create a device that recognizes pigeons and drives them out.  
   
 # 계획
+![구조](https://user-images.githubusercontent.com/68323158/109514419-5d868e00-7ae9-11eb-9b08-bbb70c186a8f.jpg)
+
 비둘기 인식 -> 비둘기가 싫어한다고 하는 계피향 분출하는 장치 만들기  
 -> 데스크탑[비둘기가 학습된 Yolo_v4를 이용한 USB웹캠 실행] + SG90 [180 Degree]를 이용하여 좌우  + 물총도 함께 회전  
 -> 웹 웹캠에서 비둘기를 인식 시, 비둘기 Bounding box의 중앙 좌표 값을 계산하여 php 파일로 Raspberry Pi 4로 전송.  
