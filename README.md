@@ -38,12 +38,12 @@ https://www.dropbox.com/s/5up5i84l60qr778/darknet.zip?dl=0
 - time  (Servo Motor Control)
 - pigpiod (Servo Motor Control)  
 - socket (Socket Connection)  
-- cv2 (openCV for Yolo_v4)  
+- cv2 (Yolo_v4)  
 - darknet (Yolo_v4)  
 - numpy (Yolo_v4)  
-- os  
-- math  
-- random  
+- os  (Yolo_v4)
+- math  (Yolo_v4)
+- random  (Yolo_v4)
   
 # 학습 진행 
 2021/01/27  
