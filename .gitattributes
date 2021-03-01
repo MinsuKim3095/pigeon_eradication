@@ -1,0 +1,5 @@
+*.weights filter=lfs diff=lfs merge=lfs -text
+*.conv filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.142 filter=lfs diff=lfs merge=lfs -text
+*.137 filter=lfs diff=lfs merge=lfs -text
