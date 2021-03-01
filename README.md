@@ -4,17 +4,12 @@ Let's create a device that recognizes pigeons and drives them out.
 # 계획
 ![구조](https://user-images.githubusercontent.com/68323158/109514419-5d868e00-7ae9-11eb-9b08-bbb70c186a8f.jpg)
 
-비둘기 인식 -> 비둘기가 싫어한다고 하는 계피향 분출하는 장치 만들기  
--> 데스크탑[비둘기가 학습된 Yolo_v4를 이용한 USB웹캠 실행] + SG90 [180 Degree]를 이용하여 좌우  + 물총도 함께 회전  
--> 웹 웹캠에서 비둘기를 인식 시, 비둘기 Bounding box의 중앙 좌표 값을 계산하여 php 파일로 Raspberry Pi 4로 전송.  
--> Raspberry Pi 4에서 php와 mysql을 이용한 server를 만들고, 중앙 좌표 값을 php 파일로 받기  
--> 동시에 SG90 모터 정지 후,[카메라 및 물총 회전 정지] + 물총 트리거에 설치해놓은 MG996R [360 Degree]를 이용하여 해당 지점에 물총 발사
-  
+
 # 참고사이트  
-https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html  
-https://github.com/aleju/imgaug#documentation  
-https://junyoung-jamong.github.io/machine/learning/2019/01/23/%EB%B0%94%EC%9A%B4%EB%94%A9%EB%B0%95%EC%8A%A4%EB%A5%BC-%ED%8F%AC%ED%95%A8%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%A6%9D%ED%8F%AD%EC%8B%9C%ED%82%A4%EA%B8%B0-with-imgaug.html  
-https://lee-yunseok.tistory.com/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC-%ED%8C%8C%EC%9D%B4-4-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EA%B5%AC%EC%84%B1-%EB%B0%8F-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95%EB%B2%95
+[Yolo_v4 Github]  
+https://github.com/AlexeyAB/darknet  
+[Yolo_v4 Tutorial]  
+https://www.youtube.com/watch?v=5pYh1rFnNZs
 
   
 2021/1/20  
